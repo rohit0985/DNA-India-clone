@@ -1,0 +1,28 @@
+body{
+  padding: 0px;
+  margin: 0px;
+}
+#container{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    margin: 20px;
+  }
+  #navbar{
+    /* border: 1px solid green; */
+    height: 100vh;
+    width: 25%;
+    position: sticky;
+    top: 12vh;
+  }
+  #main{
+    border: 1px solid black;
+    height: 500vh;
+    width: 50%;
+  }
+  #trending{
+    border: 1px solid blue;
+    height: 300vh;
+    width: 25%;
+  }
