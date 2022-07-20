@@ -1,0 +1,46 @@
+
+#footer{
+    background-color: rgb(31, 30, 30);
+}
+#footer-content{ 
+   margin: 0px 15px;
+}
+#footer-content>div:nth-child(2)>ul>div:first-child{
+flex-direction: column;
+}
+#footer-content>div:last-child{
+    font-size: 15px;
+    color: rgb(174, 172, 172);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 2px 0px;
+    background-color: rgb(31, 30, 30);
+    color: rgb(127, 126, 126);
+    border-bottom: 0.1px solid rgba(86, 85, 85, 0.824);
+    margin: 0px;
+    height: 12vh;
+    
+  }
+  #footer ul > div {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #footer #contact{
+    display: flex;
+    margin-top: -45px;
+  }
+ #contact>li>a>img{
+    height: 4vh;
+    width: 4vh;
+    margin-right: 10px;
+ }
+  #footer img:first-child{
+    height: 8vh;
+  }
