@@ -1,0 +1,33 @@
+#main {
+    /* border: 1px solid red; */
+
+    width: 50%;
+    margin: auto;
+  }
+
+  #main > div+div {
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 10px 0px;
+    padding: 15px;
+    font-size: 23px;
+    line-height: 30px;
+  }
+
+  #main >div+div> img {
+    width: 100%;
+  }
+  #main > div:first-child{
+    border-bottom: 2px solid rgb(222, 220, 220);
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+   
+  }
+  h1{
+    display: inline;
+border-bottom: 2px solid rgb(237, 218, 7);
+margin-bottom: -2px;
+padding-bottom: 10px;
+
+  }

@@ -1,0 +1,32 @@
+#main>div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 10px 0px;
+  font-size: 21px;
+}
+
+#main>div:first-child>p {
+  padding: 5px;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+}
+
+#main>div>img {
+  width: 100%;
+}
+
+
+#main>div+div {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  font-size: 20px;
+  align-items: initial;
+}
+
+#main>div+div>p {
+  margin-top: 0px;
+}
+
+#main>div+div>img {
+  width: 30%;
+}

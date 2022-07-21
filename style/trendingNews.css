@@ -1,0 +1,50 @@
+
+#trending_news>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    #trending_news li{
+      margin: 10px 0px 5px -40px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    
+    #trending_news>div>div:nth-child(1){
+        border-bottom:2px solid rgb(228, 205, 24) ;
+        width: 70%;
+        height: 100%;
+        
+    }
+    
+    #trending_news>div>div:nth-child(2){
+        border-bottom:2px solid rgb(195, 195, 195) ;
+        width: 30%;
+        display: flex;
+        justify-content: end;
+        padding-top: 35px;
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    #trending #burning_issue{
+        color: white;
+    }
+    #trending a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #trending_news li:nth-child(1){
+      background-color: rgb(245, 228, 96);
+    }
+    
+    #trending_news li:nth-child(2){
+      background-color: rgb(120, 120, 255);
+    }
+    
+    #trending_news li:nth-child(3){
+      background-color: rgb(174, 109, 174);
+    }
+    
