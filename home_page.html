@@ -11,20 +11,24 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/trendingNews.css" />
     <link rel="stylesheet" href="style/trendingNews.css" />
-    <link rel="stylesheet" href="style/topNews.css">
-
-    <style>
-     
-    </style>
+    <link rel="stylesheet" href="style/topNews.css" />
+    <link rel="stylesheet" href="style/popular_stories.css" />
+    <link rel="stylesheet" href="style/most_viewed.css" />
+    <link rel="stylesheet" href="style/speed_read.css" />
+    <link rel="stylesheet" href="style/dna_original.css" />
+    <link rel="stylesheet" href="style/video_carsoul.css" />
+    <link rel="stylesheet" href="style/photo_crouser.css" />
   </head>
   <body>
     <div id="header">
       <div>
-        <img
-          id="logo"
-          src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png"
-          alt=""
-        />
+        <a href="http://127.0.0.1:5500/home_page.html"
+          ><img
+            id="logo"
+            src="https://english.cdn.zeenews.com/static/apprun/dna/icons/logodna.png"
+            alt=""
+        /></a>
+
         <p>हिंदी में पढ़ें</p>
       </div>
       <div>
@@ -39,9 +43,16 @@
       <div><p>Top News</p></div>
       <div>
         <p>
-          SC gives Nupur Sharma interim relief, issues notice to Delhi, West
-          Bengal, Maharastra
+          <marquee
+            behavior="scroll"
+            scrolldelay="60"
+            direction="left"
+            width="1000px"
+            >SC gives Nupur Sharma interim relief, issues notice to Delhi, West
+            Bengal, Maharastra.</marquee
+          >
         </p>
+
         <div>
           <button><</button>
           <button>||</button>
@@ -64,7 +75,7 @@
             src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg"
             alt=""
           />
-          <a href="">Photos</a>
+          <a href="http://127.0.0.1:5500/photos.html">Photos</a>
         </div>
         <div>
           <img
@@ -138,7 +149,30 @@
         </div>
       </div>
 
-      <div id="main"></div>
+      <div id="main">
+        <div id="change1"></div>
+
+        <div id="change2">
+          <div><h2>VIDEOS</h2></div>
+
+          <div id="video">
+            <img id="carsoul" src="" alt="" />
+          </div>
+
+          <div id="btn-div">
+            <button id="v-btn1"></button>
+            <button id="v-btn2"></button>
+            <button id="v-btn3"></button>
+            <button id="v-btn4"></button>
+          </div>
+          <div>
+            <a href="http://127.0.0.1:5500/photos.html"><h4>MORE VIDEOS</h4></a>
+          </div>
+        </div>
+
+
+
+      </div>
 
       <div id="trending">
         <div id="trending_news">
@@ -157,11 +191,35 @@
           </ul>
         </div>
 
-        <div id="trending_news">
-          <div>
-            <div><h4>POPULAR STORIES</h4></div>
-            <div><a href="">More</a></div>
+        <div id="top_stories">
+          <div id="head">
+            <h4>POPULAR STORIES</h4>
+            <a href="">More</a>
           </div>
+        </div>
+
+        <div id="most_viewed">
+          <div id="head">
+            <h4>MOST VIEWED</h4>
+            <a href="">More</a>
+          </div>
+          <div id="m-v-content"></div>
+        </div>
+
+        <div id="speed_read">
+          <div id="head">
+            <h4>SPEED READ</h4>
+            <a href="">More</a>
+          </div>
+          <div id="s-r-content"></div>
+        </div>
+
+        <div id="dna_original">
+          <div id="head">
+            <h4>DNA ORIGINAL</h4>
+            <a href="">More</a>
+          </div>
+          <div id="d-o-content"></div>
         </div>
       </div>
     </div>
@@ -255,4 +313,9 @@
 </html>
 
 <script src="script/topNews.js"></script>
-
+<script src="script/popular_stories.js"></script>
+<script src="script/most_viewed.js"></script>
+<script src="script/speed_read.js"></script>
+<script src="script/dna_original.js"></script>
+<script src="script/video_crouser.js"></script>
+<script src="script/photos_crouser.js"></script>

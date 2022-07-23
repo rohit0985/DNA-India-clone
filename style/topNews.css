@@ -1,21 +1,21 @@
-#main>div {
+#change1>div {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   margin: 10px 0px;
   font-size: 21px;
 }
 
-#main>div:first-child>p {
+#change1>div:first-child>p {
   padding: 5px;
   font-weight: bold;
   color: rgb(46, 46, 46);
 }
 
-#main>div>img {
+#change1>div>img {
   width: 100%;
 }
 
 
-#main>div+div {
+#change1>div+div {
   display: flex;
   gap: 10px;
   padding: 10px;
@@ -23,10 +23,10 @@
   align-items: initial;
 }
 
-#main>div+div>p {
+#change1>div+div>p {
   margin-top: 0px;
 }
 
-#main>div+div>img {
+#change1>div+div>img {
   width: 30%;
 }

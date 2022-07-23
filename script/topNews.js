@@ -7,7 +7,7 @@
         "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/21/2523974-kapil-sharma-1.jpg",
       head_line:
         "The Kapil Sharma Show: New season of show to replace Archana Puran Singh's India's Laughter Challenge?",
-      desc: "http://127.0.0.1:5500/top_news%20description.html",
+      desc: "http://127.0.0.1:5500/top_news_desc.html",
     },
     {
       category: "India",
@@ -67,7 +67,7 @@ function display(data) {
       });
 
       div.append(img, heading);
-      document.querySelector("#main").append(div);
+      document.querySelector("#change1").append(div);
     });
   }
   display(top_news);

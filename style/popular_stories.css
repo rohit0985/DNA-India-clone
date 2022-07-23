@@ -1,0 +1,32 @@
+
+#top_stories #head {
+  display: flex;
+  border-bottom: 2px solid rgb(211, 208, 208);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#top_stories #head > h4 {
+  border-bottom: 2px solid rgb(245, 229, 5);
+  margin-bottom: -2px;
+  padding-bottom: 15px;
+}
+#top_stories #head > a {
+  font-size: 14px;
+}
+#top_stories > div + div {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#top_stories > div + div > p {
+  margin-top: 0px;
+  font-size: 20px;
+
+}
+#top_stories > div + div > img {
+  width: 40%;
+  height: 100%;
+}

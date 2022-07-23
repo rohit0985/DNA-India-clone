@@ -1,0 +1,37 @@
+#dna_original #head {
+    margin-top: 20px;
+    display: flex;
+    border-bottom: 2px solid rgb(211, 208, 208);
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#dna_original #head>h4 {
+    border-bottom: 2px solid rgb(245, 229, 5);
+    margin-bottom: -2px;
+    padding-bottom: 15px;
+}
+
+#dna_original #head>a {
+    font-size: 14px;
+}
+
+#d-o-content>div {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#d-o-content>div>p {
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+#d-o-content>div>img {
+    width: 40%;
+    height: 100%;
+
+}
