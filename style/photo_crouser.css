@@ -1,0 +1,68 @@
+
+#change3{
+    width: 100%;
+    margin-top: 50px;
+}
+#photos {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+#photos img {
+  width: 100%;
+  height: 40vh;
+}
+#photos p{
+    font-size: 20px;
+}
+ #p-btn-div{
+display: flex;
+justify-content: center;
+width: 30%;
+margin: auto;
+gap: 20px;
+}
+#p-btn1,#p-btn2,#p-btn3,#p-btn4{
+  background-color: rgba(138, 134, 134, 0.5);
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+}
+#p-btn1:focus,#p-btn2:focus,#p-btn3:focus,#p-btn4:focus{
+background-color: yellow;
+transform: .7s;
+}
+#change3>div:first-child{
+    border-bottom: 2px solid rgb(146, 144, 144, .3);
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    
+}
+#change3>div:first-child>h2{
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    display: inline;
+    border-bottom: 2px solid rgb(255, 225, 0);
+    
+    
+}
+#change3>div:last-child{
+background-color: rgb(245, 240, 240,.5);
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 30px 0px;
+border: 1px solid  rgb(79, 78, 78, .1);
+border-radius: 10px;
+
+}
+#change3>div:last-child>a{
+    text-decoration: none;
+    color: black;
+    margin: -10px 0px;
+ 
+}
+
+
+
+

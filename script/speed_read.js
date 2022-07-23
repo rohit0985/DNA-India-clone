@@ -1,4 +1,4 @@
-let speed_read =[
+let speed_read_arr =[
     {
         image:"https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/22/2524256-cbse.jpg",
         head_line:"CBSE Class 12 result declared: Noida, Delhi, Bhopal, Chandigarh - list of best performing cities"
@@ -21,8 +21,11 @@ let speed_read =[
     },
 ]
 
+localStorage.setItem("speed_read",JSON.stringify(speed_read_arr))
+  let speed_read_LS = JSON.parse(localStorage.getItem("speed_read")) || speed_read_arr
+
 function display(data) {
-    speed_read.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -38,4 +41,4 @@ function display(data) {
     });
    
   }
-  display(speed_read);
+  display(speed_read_LS);

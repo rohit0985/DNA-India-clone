@@ -1,6 +1,6 @@
 
 
-  let top_news = [
+  let top_news_arr = [
     {
       category: "Telivision",
       image:
@@ -54,8 +54,13 @@
   ];
 
 
+
+  localStorage.setItem("top_news",JSON.stringify(top_news_arr))
+  let top_news_home_LS = JSON.parse(localStorage.getItem("top_news")) || top_news_arr  
+
+ 
 function display(data) {
-    top_news.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -70,4 +75,4 @@ function display(data) {
       document.querySelector("#change1").append(div);
     });
   }
-  display(top_news);
+  display(top_news_home_LS);

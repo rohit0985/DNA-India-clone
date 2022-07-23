@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="style/footer.css" />
     <link rel="stylesheet" href="style/trendingNews.css" />
     <link rel="stylesheet" href="style/trendingNews.css" />
-    <link rel="stylesheet" href="style/topNews.css" />
     <link rel="stylesheet" href="style/popular_stories.css">
     <link rel="stylesheet" href="style/most_viewed.css">
     <link rel="stylesheet" href="style/speed_read.css">
     <link rel="stylesheet" href="style/dna_original.css">
+
     <link rel="stylesheet" href="style/photos.css">
 
    
@@ -49,9 +49,9 @@
         </p>
         
         <div>
-          <button><</button>
-          <button>||</button>
-          <button>></button>
+          <button id="t-n-btn-left">< </button>
+              <button>||</button>
+              <button id="t-n-btn-right">></button>
         </div>
       </div>
     </div>
@@ -63,14 +63,14 @@
             src="https://english.cdn.zeenews.com/static/public/icons/icons-latestnews.svg"
             alt=""
           />
-          <a href="">Latest News</a>
+          <a href="http://127.0.0.1:5500/latest_news.html">Latest News</a>
         </div>
         <div>
           <img
             src="https://english.cdn.zeenews.com/static/public/icons/icons-photos.svg"
             alt=""
           />
-          <a href="">Photos</a>
+          <a href="http://127.0.0.1:5500/photos.html">Photos</a>
         </div>
         <div>
           <img
@@ -84,21 +84,21 @@
             src="https://english.cdn.zeenews.com/static/public/icons/icons-explainer.svg"
             alt=""
           />
-          <a href="">Explainer</a>
+          <a href="http://127.0.0.1:5500/explainer.html">Explainer</a>
         </div>
         <div>
           <img
             src="https://english.cdn.zeenews.com/static/public/icons/icons-india.svg"
             alt=""
           />
-          <a href="">India</a>
+          <a href="http://127.0.0.1:5500/india.html">India</a>
         </div>
         <div>
           <img
             src="https://english.cdn.zeenews.com/static/public/icons/icons-entertainment.svg"
             alt=""
           />
-          <a href="">Entertainment</a>
+          <a href="http://127.0.0.1:5500/entertainment.html">Entertainment</a>
         </div>
         <div>
           <img
@@ -148,7 +148,7 @@
         
           Home >> Photos
           <div><h1>PHOTOS</h1></div>
-        
+        <div id="change1"></div>
         
       </div>
 
@@ -295,10 +295,12 @@
   </body>
 </html>
 
-<script src="script/topNews.js"></script>
+
 <script src="script/popular_stories.js"></script>
 <script src="script/most_viewed.js"></script>
 <script src="script/speed_read.js"></script>
 <script src="script/dna_original.js"></script>
+<script src="script/slide_news.js"></script>
+
 <script src="script/photos.js"></script>
 

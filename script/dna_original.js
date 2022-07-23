@@ -1,4 +1,4 @@
-dna_original=[
+dna_original_arr=[
     { image:"https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/16/2522881-racism.jpg",
     head_line:"DNA Exclusive: Brad Hogg talks about racism in cricket, says 'anyone who's racist is not that intelligent'"
     },
@@ -16,10 +16,11 @@ dna_original=[
     },
 ]
 
-
+localStorage.setItem("dna_original",JSON.stringify(dna_original_arr))
+let dna_original_LS = JSON.parse(localStorage.getItem("dna_original")) || dna_original_arr
 
 function display(data) {
-    dna_original.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -35,4 +36,4 @@ function display(data) {
     });
    
   }
-  display(dna_original);
+  display(dna_original_LS);

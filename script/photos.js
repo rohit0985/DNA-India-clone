@@ -1,5 +1,5 @@
 
- let photo = [
+ let photos_arr = [
     {
       image:
         "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/07/21/2524078-untitled-design-2022-07-21t175834.763.jpg",
@@ -71,9 +71,13 @@
   ];
 
 
+  localStorage.setItem("photos",JSON.stringify(photos_arr))
+  let photos_LS = JSON.parse(localStorage.getItem("photos")) || photos_arr
+
+  // let top_news_LS = JSON.parse(localStorage.getItem("top_news"))
 
 function display(data) {
-    photo.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -88,4 +92,4 @@ function display(data) {
       document.querySelector("#main").append(div);
     });
   }
-  display(photo);
+  display(photos_LS);

@@ -59,3 +59,17 @@
     color: white;
     padding-left: 15px;
 }
+
+#t-n-btn-left, #t-n-btn-mid, #t-n-btn-right{
+    border: none;
+    background-color: rgb(217, 215, 215,.1);
+    color: rgb(225, 218, 218,.5);
+    margin-right: 20px;
+   
+    
+}
+#t-n-btn-left:hover, #t-n-btn-right:hover{
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
