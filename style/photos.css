@@ -1,11 +1,6 @@
-#main {
-    /* border: 1px solid red; */
 
-    width: 50%;
-    margin: auto;
-  }
 
-  #main > div+div {
+  #change1 > div {
     
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     margin: 10px 0px;
@@ -14,7 +9,7 @@
     line-height: 30px;
   }
 
-  #main >div+div> img {
+  #change1>div> img {
     width: 100%;
   }
   #main > div:first-child{

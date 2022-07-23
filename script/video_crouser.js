@@ -1,6 +1,6 @@
 
 
-  let videos = [
+  let videos_arr = [
     {
       image:
         "https://cdn.dnaindia.com/sites/default/files/styles/half/public/2022/07/22/2524388-22thumbnail1800456.jpeg",
@@ -62,13 +62,16 @@
     },
   ];
 
+  localStorage.setItem("videos",JSON.stringify(videos_arr))
+  let videos_LS = JSON.parse(localStorage.getItem("videos")) || videos_arr
+
   let carsoul = document.getElementById("carsoul");
   let video = document.getElementById("video");
 
   let left = 0;
   right = 2;
 
-  function display(videos) {
+  function displayVideo(videos) {
 
 
     video.innerHTML = null;
@@ -83,30 +86,30 @@
       video.append(div);
     }
   }
-  display(videos);
+  displayVideo(videos_LS);
 
   
   document.getElementById("v-btn1").addEventListener("click", function(){
     left=1;
     right = left+2
     
-    display(videos);
+    displayVideo(videos_LS);
 })
 document.getElementById("v-btn2").addEventListener("click", function(){
     left=2;
     right = left+2
    
-    display(videos);
+    displayVideo(videos_LS);
 })
 document.getElementById("v-btn3").addEventListener("click", function(){
     left=3;
     right = left+2
-    display(videos);
+    displayVideo(videos_LS);
 })
 document.getElementById("v-btn4").addEventListener("click", function(){
     left=4;
     right =left+2
-    display(videos);
+    displayVideo(videos_LS);
 })
 
  

@@ -1,4 +1,4 @@
-most_viewed=[
+most_viewed_arr=[
     {
         image:"https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/08/2520708-shreya-ist-slide.jpg",
     head_line:"The Family Man actress Shreya..."
@@ -21,8 +21,11 @@ most_viewed=[
     },
 ]
 
+ localStorage.setItem("most_viewed",JSON.stringify(most_viewed_arr))
+  let most_viewed_LS = JSON.parse(localStorage.getItem("most_viewed")) || most_viewed_arr
+
 function display(data) {
-    most_viewed.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -37,4 +40,4 @@ function display(data) {
       document.querySelector("#m-v-content").append(div);
     });
   }
-  display(most_viewed);
+  display(most_viewed_LS);

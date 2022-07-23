@@ -1,6 +1,6 @@
 
 
-  top_stories = [
+  popular_stories_arr = [
     {
       image:
         "https://cdn.dnaindia.com/sites/default/files/styles/full/public/2022/07/20/2523771-untitled-design-2022-07-13t193451.521.jpg",
@@ -33,8 +33,12 @@
     },
   ];
 
+  localStorage.setItem("popular_stories",JSON.stringify(popular_stories_arr))
+  let popular_stories_LS = JSON.parse(localStorage.getItem("popular_stories")) || popular_stories_arr
+
+
   function display(data) {
-    top_stories.forEach(function (ele, idx) {
+    data.forEach(function (ele, idx) {
       let div = document.createElement("div");
       let img = document.createElement("img");
       img.src = ele.image;
@@ -49,5 +53,5 @@
       document.querySelector("#top_stories").append(div);
     });
   }
-  display(top_stories);
+  display(popular_stories_LS);
 
